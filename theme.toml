@@ -17,3 +17,6 @@ min_version = "0.57.1"
 [services]
   [services.disqus]
     shortname = 'nunesdennis'
+
+[params]
+  comments = true
