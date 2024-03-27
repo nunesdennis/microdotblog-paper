@@ -13,3 +13,7 @@ min_version = "0.57.1"
 [author]
   name = "nanxiaobei"
   homepage = "https://lee.so/"
+
+[services]
+  [services.disqus]
+    shortname = 'nunesdennis'
