@@ -1,3 +1,7 @@
 {
-    "disqusShortname" : "nunesdennis"
-}
+    "services": {
+       "disqus": {
+          "shortname": "nunesdennis"
+       }
+    }
+ }
