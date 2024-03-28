@@ -68,6 +68,7 @@
   {{ end }}
 
   <!-- Disqus -->
+  {{ if eq .Type "post"}}
   <div id="disqus_thread" class="post-comments"></div>
   <script>
     var disqusShortname = 'nunesdennis';
@@ -77,5 +78,5 @@
     document.head.appendChild(script);
   </script>
 </article>
-
+{{ end }}
 {{ end }}
