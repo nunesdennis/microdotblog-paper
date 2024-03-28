@@ -59,7 +59,9 @@
     </a>
     {{ end }}
   </nav>
+  {{ if eq .Type "post"}}
   {{ partial "adsense.html" . }}
+  {{ end }}
   {{ end }}
 
   <!-- Replies via Webmentions -->
