@@ -29,7 +29,8 @@
 {{ end }}
 
 <!-- Main Nav -->
-{{ if gt $paginator.TotalPages -1 }}
+{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post" | default 25) }}
+{{ range $paginator.Pages  }}
 <nav class="main-nav">
   {{ if $paginator.HasPrev }}
   <a class="prev" href="{{ $paginator.Prev.URL }}">← Prev Page</a>
