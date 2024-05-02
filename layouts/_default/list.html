@@ -4,7 +4,7 @@
 {{ $pages := union .RegularPages .Sections }}
 <!---->{{ if .IsHome }}
 {{ $pages = where site.RegularPages "Type" "post" }}
-{{ range (where $pages "Title" "!=" "") }}
+{{ $pages = where $pages "Title" "!=" "" }}
 {{ end }}
 
 <!-- Articles -->
