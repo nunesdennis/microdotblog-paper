@@ -29,7 +29,7 @@
 {{ end }}
 
 <!-- Main Nav -->
-{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post" | default 25) }}
+{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post" | default 10) }}
 {{ range $paginator.Pages  }}
 <nav class="main-nav">
   {{ if $paginator.HasPrev }}
